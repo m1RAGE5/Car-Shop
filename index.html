@@ -7,11 +7,13 @@
   </head>
   <body>
     <header>
-      <nav id="main-menu">
+      <nav>
         <ul>
           <li><a href="#audi">Audi</a></li>
           <li><a href="#toyota">Toyota</a></li>
           <li><a href="#bmw">BMW</a></li>
+          <li><a href="#car-table">Table</a></li>
+          <li><a href="./assets/pages/form.html">Form</a></li>
         </ul>
         <a href="#">
           <img src="./assets/icons/car-shop.svg" alt="Car Shop logo" width="75" />
@@ -64,7 +66,7 @@
             </li>
           </ul>
         </section>
-        <a href="#main-menu">Повернутися назад</a>
+        <a href="#">Повернутися назад</a>
       </article>
       <article id="toyota">
         <img src="./assets/icons/logo-toyota.svg" alt="Toyota car logo" width="50" />
@@ -110,7 +112,7 @@
             </li>
           </ul>
         </section>
-        <a href="#main-menu">Повернутися назад</a>
+        <a href="#">Повернутися назад</a>
       </article>
       <article id="bmw">
         <img src="./assets/icons/logo-bmw.svg" alt="BMW car logo" width="50" />
@@ -127,10 +129,10 @@
           <h3>Огляд моделей</h3>
           <ul>
             <li>
-              <h4>BMW 3 Series</h4>
+              <h4>BMW 330i</h4>
               <p>
-                Легендарний спортивний седан, який пропонує ідеальне розважування 50:50, гостре
-                рульове управління та потужні двигуни. Еталон у своєму класі.
+                Cпортивний седан, який пропонує ідеальне розважування 50:50, гостре рульове
+                управління та потужний двигун. Еталон у своєму класі.
               </p>
             </li>
             <li>
@@ -155,8 +157,82 @@
             </li>
           </ul>
         </section>
-        <a href="#main-menu">Повернутися назад</a>
+        <a href="#">Повернутися назад</a>
       </article>
+      <section>
+        <table id="car-table">
+          <caption>
+            Table#2 Cars info
+          </caption>
+          <thead>
+            <tr>
+              <th rowspan="2">Brand</th>
+              <th rowspan="2">Model</th>
+              <th rowspan="2">Country</th>
+              <th colspan="2">Weight kg</th>
+              <th rowspan="2">Max speed</th>
+              <th rowspan="2">Relise year</th>
+            </tr>
+            <tr>
+              <th>empty</th>
+              <th>full</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th rowspan="2">Audi</th>
+              <th>A4</th>
+              <th>Germany</th>
+              <th>1485</th>
+              <th>2060</th>
+              <th>240</th>
+              <th>2024</th>
+            </tr>
+            <tr>
+              <th>Q5</th>
+              <th>Germany</th>
+              <th>1820</th>
+              <th>2400</th>
+              <th>220</th>
+              <th>2025</th>
+            </tr>
+            <tr>
+              <th rowspan="2">Toyota</th>
+              <th>Camry</th>
+              <th>Japan</th>
+              <th>1470</th>
+              <th>1600</th>
+              <th>210</th>
+              <th>2023</th>
+            </tr>
+            <tr>
+              <th>RAV4</th>
+              <th>Japan</th>
+              <th>1650</th>
+              <th>2000</th>
+              <th>200</th>
+              <th>2024</th>
+            </tr>
+            <tr>
+              <th rowspan="2">BMW</th>
+              <th>330i</th>
+              <th>Germany</th>
+              <th>1545</th>
+              <th>2000</th>
+              <th>250</th>
+              <th>2022</th>
+            </tr>
+            <tr>
+              <th>X5</th>
+              <th>Germany</th>
+              <th>2135</th>
+              <th>2700</th>
+              <th>230</th>
+              <th>2025</th>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </main>
     <footer>
       <address>

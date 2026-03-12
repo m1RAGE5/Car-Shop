@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <nav>
+      <a href="/index.html">Main page</a>
+    </nav>
+    <form>
+      <fieldset>
+        <legend>Personal info</legend>
+        <div>
+          <label for="fst-name">First Name</label>
+          <input type="text" id="fst-name" />
+        </div>
+        <div>
+          <label for="lst-name">Last Name</label>
+          <input type="text" id="lst-name" />
+        </div>
+        <div>
+          <label for="birthday">Birthday</label>
+          <input type="datetime-local" id="birthday" />
+        </div>
+        <label>Gender</label>
+        <div>
+          <label for="ml-gender">Male</label>
+          <input type="radio" id="ml-gender" name="gender" checked />
+          <label for="fml-gender">Female</label>
+          <input type="radio" id="fml-gender" name="gender" />
+        </div>
+        <div>
+          <label for="drive-exp">Drive experience</label>
+          <select id="drive-exp">
+            <option value="">---</option>
+            <option value="0-1y">0-1y</option>
+            <option value="1-2y">1-2y</option>
+            <option value="3yr+">3yr+</option>
+          </select>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contacts</legend>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" />
+        </div>
+        <div>
+          <label for="address">Address</label>
+          <textarea id="address" name="address" rows="4" cols="19"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Car info</legend>
+        <div>
+          <label for="brand">Brand</label>
+          <select id="brand" name="brand">
+            <option value="">---</option>
+            <option value="Audi">Audi</option>
+            <option value="Toyota">Toyota</option>
+            <option value="BMW">BMW</option>
+          </select>
+        </div>
+        <div>
+          <label for="model">Model</label>
+          <select id="model" name="model">
+            <option value="">---</option>
+            <option value="A4">A4</option>
+            <option value="Q5">Q5</option>
+            <option value="Camry">Camry</option>
+            <option value="RAV4">RAV4</option>
+            <option value="330i">330i</option>
+            <option value="X5">X5</option>
+          </select>
+        </div>
+        <div>
+          <label for="used">Used</label>
+          <input type="checkbox" id="used" />
+        </div>
+        <label>Color</label>
+        <div>
+          <label for="red">Red</label>
+          <input type="radio" id="red" name="color" value="red" checked />
+          <label for="black">Black</label>
+          <input type="radio" id="black" name="color" value="black" />
+          <label for="blue">Blue</label>
+          <input type="radio" id="blue" name="color" value="blue" />
+          <label for="white">White</label>
+          <input type="radio" id="white" name="color" value="white" />
+          <label for="grey">Grey</label>
+          <input type="radio" id="grey" name="color" value="grey" />
+        </div>
+        <div>
+          <label for="price">Price</label>
+          <input
+            type="range"
+            id="price"
+            name="price"
+            min="1000"
+            max="10000"
+            step="1000"
+            list="cost" />
+          <datalist id="cost">
+            <option value="1000"></option>
+            <option value="2000"></option>
+            <option value="3000"></option>
+            <option value="4000"></option>
+            <option value="5000"></option>
+            <option value="6000"></option>
+            <option value="7000"></option>
+            <option value="8000"></option>
+            <option value="9000"></option>
+            <option value="10000"></option>
+          </datalist>
+        </div>
+      </fieldset>
+      <button type="button">Cancel</button>
+      <button type="submit">Ok</button>
+    </form>
+  </body>
+</html>
