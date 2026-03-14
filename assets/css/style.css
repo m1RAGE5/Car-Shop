@@ -1,0 +1,10 @@
+#car-table {
+  margin: 20px auto;
+  width: 600px;
+  border: 2px solid darkcyan;
+}
+
+#car-table th,
+#car-table td {
+  border: 2px solid darkcyan;
+}
